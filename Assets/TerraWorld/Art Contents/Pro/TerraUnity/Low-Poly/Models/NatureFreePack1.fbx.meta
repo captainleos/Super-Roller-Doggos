@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: e5617ab9af6445f45a658322b9c8fc04
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Branch
+    100002: Bush1
+    100004: Bush2
+    100006: Grass1
+    100008: Grass2
+    100010: Mushroom1
+    100012: Mushroom2
+    100014: //RootNode
+    100016: Rock1
+    100018: Rock2
+    100020: Rock3
+    100022: Rock4
+    100024: Stump1
+    100026: Tree1
+    100028: Tree2
+    400000: Branch
+    400002: Bush1
+    400004: Bush2
+    400006: Grass1
+    400008: Grass2
+    400010: Mushroom1
+    400012: Mushroom2
+    400014: //RootNode
+    400016: Rock1
+    400018: Rock2
+    400020: Rock3
+    400022: Rock4
+    400024: Stump1
+    400026: Tree1
+    400028: Tree2
+    2100000: Tree1_2.001
+    2100002: Tree1
+    2100004: Tree3_1.001
+    2100006: Tree3_2.001
+    2100008: Rock1_1.001
+    2100010: Mushroom4_1
+    2100012: Mushroom4_2
+    2100014: Grass1_1.001
+    2100016: Bush1_1
+    2100018: Mushroom3_2
+    2100020: Mushroom3_1
+    2100022: Rock1_1
+    2100024: Branch1_1
+    2100026: Branch1_2
+    2100028: Stump1_1
+    2100030: Stump1_2
+    2300000: Branch
+    2300002: Bush1
+    2300004: Bush2
+    2300006: Grass1
+    2300008: Grass2
+    2300010: Mushroom1
+    2300012: Mushroom2
+    2300014: Rock1
+    2300016: Rock2
+    2300018: Rock3
+    2300020: Rock4
+    2300022: Stump1
+    2300024: Tree1
+    2300026: Tree2
+    3300000: Branch
+    3300002: Bush1
+    3300004: Bush2
+    3300006: Grass1
+    3300008: Grass2
+    3300010: Mushroom1
+    3300012: Mushroom2
+    3300014: Rock1
+    3300016: Rock2
+    3300018: Rock3
+    3300020: Rock4
+    3300022: Stump1
+    3300024: Tree1
+    3300026: Tree2
+    4300000: Tree1
+    4300002: Tree2
+    4300004: Rock1
+    4300006: Rock3
+    4300008: Mushroom2
+    4300010: Grass1
+    4300012: Grass2
+    4300014: Bush1
+    4300016: Bush2
+    4300018: Mushroom1
+    4300020: Rock2
+    4300022: Rock4
+    4300024: Branch
+    4300026: Stump1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Branch1_1
+    second: {fileID: 2100000, guid: 8cdbe5e51e924394f9d2836c3ff40e46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Branch1_2
+    second: {fileID: 2100000, guid: 2b52bacf2d7edb1458cb472934408bad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bush1_1
+    second: {fileID: 2100000, guid: 54200e490ccc63e4086fad98d4f7b52d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass1_1.001
+    second: {fileID: 2100000, guid: 714930d6541a0024b84a17b0b550553b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom3_1
+    second: {fileID: 2100000, guid: 51db9ee4794d993488faf74f721d034e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom3_2
+    second: {fileID: 2100000, guid: e91d83bc885bf31408415f640366b1fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom4_1
+    second: {fileID: 2100000, guid: 8bc9e16d736dab44eb16b9a4a1ef628e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom4_2
+    second: {fileID: 2100000, guid: 532631fcd0eb9864886f27cfbcfdd373, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock1_1
+    second: {fileID: 2100000, guid: 724fdf050dbda1c459ad3e6920129e1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock1_1.001
+    second: {fileID: 2100000, guid: 784506445286add41aa6a0b2f0bae1f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump1_1
+    second: {fileID: 2100000, guid: 813e05f43fb80954bb5f6be0c725ac4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump1_2
+    second: {fileID: 2100000, guid: c8c477b8d39912b43a9a014a689769f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree1
+    second: {fileID: 2100000, guid: 569fcc5beead7ee489a0fe80fdb4f781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree1_2.001
+    second: {fileID: 2100000, guid: 453e473bbf17dd24caba44f9d6296a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree3_1.001
+    second: {fileID: 2100000, guid: fab139a9e7b675d4e92293a5f7ad5ec2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree3_2.001
+    second: {fileID: 2100000, guid: 54bc7e665e3c8d04eb512c46cd33f857, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 75
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

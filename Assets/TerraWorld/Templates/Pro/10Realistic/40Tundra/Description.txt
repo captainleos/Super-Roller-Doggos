@@ -1,0 +1,12 @@
+Tundra High
+
+This template mainly analyzes terrain slopes, satellite image's pixels and landcover
+data to detect low and high altitude areas on map for close to real-world texturing
+distribution and assets placement.
+
+There will be high density of dry plants in flat areas with no trees scattering.
+
+Distribution of elements will be done by high density, resolution & distance settings.
+
+Note: Earth locations with Tundra biome have low resolution to no available data in
+most of the regions. Setting lower values in nodes may help to get better results.

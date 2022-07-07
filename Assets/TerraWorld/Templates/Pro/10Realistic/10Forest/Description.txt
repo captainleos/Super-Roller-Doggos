@@ -1,0 +1,10 @@
+Forest High
+
+This template mainly analyzes terrain slopes, satellite image's pixels and landcover
+data to detect green areas on map for close to real-world texturing distribution and
+vegetation placement.
+
+There will be high density trees, plants and rocks in flat areas plus another lower
+density vegetation and rocks on higher slopes.
+
+Distribution of elements will be done by high density, resolution & distance settings.
