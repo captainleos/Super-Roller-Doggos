@@ -12,7 +12,7 @@ public class LoopingAudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerController = GameObject.Find("Milord").GetComponent<PlayerController>();
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         loopingAudio = GetComponent<AudioSource>();
         loopingAudio.clip = rollSound;
         loopingAudio.loop = true;

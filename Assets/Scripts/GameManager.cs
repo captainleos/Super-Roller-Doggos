@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     // General
     public bool gameStarted = false;
     public bool gameOver = false;
-    public TextMeshProUGUI pressSpaceText;
+    //public TextMeshProUGUI pressSpaceText;
+    public GameObject infoPanel;
     public GameObject finishPanel;
 
     // Score
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI finishScoreText;
     private int score;
+    private int fullScore;
 
     // Timer
     public float timeRemaining;
@@ -27,11 +29,17 @@ public class GameManager : MonoBehaviour
     // Checkpoint
     public string p1LastCheckpoint;
 
+    // Save score
+    [SerializeField] public GameObject highScoresTable;
+    [SerializeField] public GameObject inputField;
+    private HighScoreTable highScoreTable;
+
     void Start()
     {
         score = 0;
         scoreText.text = "" + score;
         // timerIsRunning = true;
+        highScoreTable = highScoresTable.GetComponent<HighScoreTable>();
     }
 
     void Update()
@@ -39,7 +47,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             gameStarted = true;
-            pressSpaceText.enabled = false;
+            infoPanel.SetActive(false);
             scoreText.enabled = true;
             timeRemainingText.enabled = true;
         }
@@ -83,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void Finish()
     {
-        int fullScore = (Mathf.FloorToInt(timeRemaining) * scorePerSecondRemaining);
+        fullScore = (Mathf.FloorToInt(timeRemaining) * scorePerSecondRemaining);
         fullScore += score;
 
         timerIsRunning = false;
@@ -98,5 +106,15 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void SaveButton()
+    {
+        string playerName = inputField.GetComponent<TMP_InputField>().text;
+        highScoreTable.AddHighScoreEntry(fullScore, playerName.ToUpper());
     }
 }

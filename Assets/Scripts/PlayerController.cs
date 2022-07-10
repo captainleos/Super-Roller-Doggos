@@ -83,6 +83,11 @@ public class PlayerController : MonoBehaviour
             {
                 Jump();
             }
+
+            if (!onGround)
+            {
+                gameManager.UpdateScore(1);
+            }
         }
     }
 
