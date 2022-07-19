@@ -21,10 +21,32 @@ public class HighScoreTable : MonoBehaviour
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
         entryTemplate.gameObject.SetActive(false);
 
-
-
         string jsonString = PlayerPrefs.GetString("highScoreTable");
         HighScores highScores = JsonUtility.FromJson<HighScores>(jsonString);
+
+        try
+        {
+            Debug.Log(highScores.highScoreEntryList);
+        }
+        catch
+        {
+            // Writing a new first entry
+            highScoreEntryList = new List<HighScoreEntry>()
+            {
+                new HighScoreEntry{score = 0, name = "AAA"}
+            };
+
+            string json = JsonUtility.ToJson(highScoreEntryList);
+            PlayerPrefs.SetString("highScoreTable", json);
+            PlayerPrefs.Save();
+
+            jsonString = PlayerPrefs.GetString("highScoreTable");
+            highScores = JsonUtility.FromJson<HighScores>(jsonString);
+
+            Debug.Log(PlayerPrefs.GetString("highScoreTable"));
+            Debug.Log(highScores.highScoreEntryList);
+        }
+
         highScoreEntryList = highScores.highScoreEntryList;
 
         highScoreEntryTransformList = new List<Transform>();
@@ -33,6 +55,11 @@ public class HighScoreTable : MonoBehaviour
             CreateHighScoreEntryTransform(highScoreEntry, entryContainer, highScoreEntryTransformList);
         }
     }
+
+    //private void CheckIfTableExists(HighScores highScores, string jsonString)
+    //{
+        
+    //}
 
     private void CreateHighScoreEntryTransform(HighScoreEntry highScoreEntry, Transform container, List<Transform> transformList)
     {
